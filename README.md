@@ -22,7 +22,7 @@ var options = {
 taunusExpress(taunus, app, options);
 ```
 
-Note that the `options` object is configured as documented by the Taunus API documentation.
+Note that the `options` object is configured as [documented by the Taunus API documentation](http://taunus.bevacqua.io/api#using-taunus-express-).
 
 # License
 
