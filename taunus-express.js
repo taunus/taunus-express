@@ -1,7 +1,5 @@
 'use strict';
 
-var pkg = require('./package.json');
-
 function factory (taunus, app, options) {
   taunus.mount(addRoute, options);
 
