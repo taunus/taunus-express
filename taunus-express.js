@@ -16,7 +16,7 @@ function factory (taunus, app, options) {
     return flat;
 
     function render (req, res, next) {
-      taunus.render(d.action, res.viewModel, req, res, next);
+      taunus.render(d, res.viewModel, req, res, next);
     }
   }
 }
