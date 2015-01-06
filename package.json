@@ -1,6 +1,6 @@
 {
   "name": "taunus-express",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "Taunus plugin for Express",
   "main": "taunus-express.js",
   "repository": {
@@ -13,6 +13,5 @@
     "url": "https://github.com/taunus/taunus-express/issues"
   },
   "homepage": "https://github.com/taunus/taunus-express",
-  "dependencies": {
-  }
+  "dependencies": {}
 }
