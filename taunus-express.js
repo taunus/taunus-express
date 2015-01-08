@@ -1,8 +1,10 @@
 'use strict';
 
 function factory (taunus, app, options) {
+  var _redirect = taunus.redirect.bind(taunus);
   var _render = taunus.render.bind(taunus);
 
+  taunus.redirect = taunusRedirect;
   taunus.render = taunusRender;
   taunus.mount(addRoute, options);
 
@@ -46,6 +48,11 @@ function factory (taunus, app, options) {
   function taunusRender (route, vm, req, res, next) {
     unmangle(res);
     return _render.apply(null, arguments);
+  }
+
+  function taunusRedirect (req, res, url) {
+    unmangle(res);
+    return _redirect.apply(null, arguments);
   }
 }
 
